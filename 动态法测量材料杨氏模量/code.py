@@ -45,7 +45,7 @@ m = sum(ms) / len(ms)
 f = f_low
 dd_y = 0.004
 dL_y = 0.2
-dm_y = 1
+dm_y = 0.001
 df_y = 0.1
 
 # d_u_A = np.sqrt((1/20) * sum((d_-d) ** 2 for d_ in ds))
@@ -63,7 +63,7 @@ dd = 0.003
 # dL = round(np.sqrt(L_u_A**2 + L_u_B**2), 2)
 dL = 0.2
 # dm = round(np.sqrt(m_u_A**2 + m_u_B**2), 5)
-dm = 0.5774
+dm = 0.0007
 df = df_y
 
 print(f"d: u_A = {d_u_A}\nL: u_A = {L_u_A}\nm: u_A = {m_u_A}")
