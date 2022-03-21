@@ -36,7 +36,7 @@ plt.text(x_low - 0.01, f_low, f"({x_low:.2f}, {f_low:.2f})", ha="right", va="cen
 print(f"fn: f = {a} x^2 + {b} x + {c}")
 print(f"lowest point: ({x_low}, {f_low})")
 
-# plt.show()
+plt.show()
 
 print("\n---------- calculator ----------")
 d = sum(ds) / len(ds)
@@ -83,3 +83,23 @@ print(f"L = {L} ± {dL} mm")
 print(f"m = {m} ± {dm} g")
 print(f"E = {E} ± {dE} Pa")
 print(f"E = {E:.4g} ± {dE:.4g} Pa")
+
+"""res
+---------- plotter ----------
+fn: f = 54.85714285716307 x^2 + -25.691428571436525 x + 746.5800000000011
+lowest point: (0.2341666666666529, 743.5719619047622)
+
+---------- calculator ----------
+d: u_A = 0.0016
+L: u_A = 0.06
+m: u_A = 0.0004
+d: u_C = 0.003
+L: u_C = 0.2
+m: u_C = 0.0007
+
+d = 5.945 ± 0.003 mm
+L = 160.0 ± 0.2 mm
+m = 37.4402 ± 0.0007 g
+E = 109061502500.9468 ± 465394319.9617047 Pa
+E = 1.091e+11 ± 4.654e+08 Pa
+"""
